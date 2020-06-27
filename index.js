@@ -236,7 +236,7 @@ function getArtistByIndex(id) {
 
 function get20s(array){
   if (artists.years > "1899" && artists.years < "2001") {
-    return artists.name;
+    return artists;
   }
 }
 console.log(get20s(artists));
