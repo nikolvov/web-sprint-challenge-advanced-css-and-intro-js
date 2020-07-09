@@ -23,9 +23,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+Accessibility is used to make web pages accessible to all people regardless how they interact with the page.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+1) Use responsive units such as rem, em and % because they are scalable.
+2) Make sure all tags are semantic so a screen readercan be used for people with disabilities.
+3) Use visual counterparts as well when using color to convey a message on your site.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a value that can change, depending on conditions or on information passed to the program. Variables allow developers to hold onto essential values like font stacks, colors, and width sizes, to name a few. 
+
+In JavaScript a variable is a way to store, change and use data in code.
+
 4. What is the purpose of using functions in code?
+
+In programming, a function is a group of statements that perform a specific task. Functions are used to divide a large code into a module. This makes it a lot easier to debug code.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -35,17 +50,17 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [x] Add a viewport meta tag to the head of your index.html page.
+* [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
