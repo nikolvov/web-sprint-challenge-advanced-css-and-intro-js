@@ -235,9 +235,15 @@ function getArtistByIndex(id) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
-  if (artists.years > "1899" && artists.years < "2001") {
-    return artists;
-  }
+  let newArray = [];
+  let num = [];
+  for(let i = 0; i < array.length; i++) {
+    num = parseInt(array[i].years); 
+    if (num > 1900) {
+    newArray.push(array[i].name);
+    }
+  } 
+  return newArray;
 }
 console.log(get20s(artists));
 
@@ -255,10 +261,10 @@ console.log(get20s(artists));
 
 function removeArtist(array, index) { 
   let a = index;
-  artists.splice(a, 1);
-  return artists;
+  array.splice(a, 1);
+  return array;
 };
-console.log(removeArtist(artists, 19));
+console.log(removeArtist(artists, 0));
   
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -276,8 +282,8 @@ At the end, this function should return the new array with information added"*/
 function addArtist(array){
   artists.push(array);
   return artists;
-  };
-console.log(addArtist([{id: 20, name: 'Niko Lvov', years: '1994 - Present', genre: 'Web Dev', nationality: 'Russian-American', bio: 'Hello World!'}]));
+};
+console.log(addArtist({id: 20, name: 'Niko Lvov', years: '1994 - Present', genre: 'Web Dev', nationality: 'Russian-American', bio: 'Hello World!'}));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
